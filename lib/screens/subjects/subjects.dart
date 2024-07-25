@@ -139,3 +139,95 @@ class _Subjects_listState extends State<Subjects_list> with TickerProviderStateM
   }
 }
 
+class SubjectCard extends StatelessWidget {
+  final String imagePath;
+  final String subjectName;
+  final int units;
+  final String room;
+  final String professor;
+  final List<String> schedule;
+
+  const SubjectCard({
+    Key? key,
+    required this.imagePath,
+    required this.subjectName,
+    required this.units,
+    required this.room,
+    required this.professor,
+    required this.schedule,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.all(10),
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Align(
+                  alignment: Alignment.center,
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage(imagePath),
+                    radius: 30,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        '$subjectName ${units}',
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            room,
+                            style: TextStyle(
+                              fontSize: 16, // Add font size
+                              color: Colors.black, // You can also add color
+                            ),
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            professor,
+                            style: TextStyle(
+                              fontSize: 16, // Add font size
+                              color: Colors.black, // You can also add color
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 10),
+            Center(
+              child: Column(
+                children: schedule
+                    .map((sched) => Text(sched, style: Theme.of(context).textTheme.labelSmall))
+                    .toList(),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: Subjects_list(),
+  ));
+}
+
+
