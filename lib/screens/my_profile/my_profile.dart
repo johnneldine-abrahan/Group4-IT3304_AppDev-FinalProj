@@ -84,8 +84,8 @@ class MyProfileScreen extends StatelessWidget {
                               value: 'November 8, 2003',
                             ),
                             ProfileDetailRow(
-                              title: 'Academic Year',
-                              value: '2023-2024',
+                              title: 'null',
+                              value: 'null',
                             ),
                           ],
                         ),
