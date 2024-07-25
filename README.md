@@ -1,3 +1,3 @@
-# student_portal
+# San Juan Institute Technology Student Portal
 
-A new Flutter project.
+# 📝 Project Description
