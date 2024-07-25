@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Subjects_list extends StatefulWidget {
-  const Subjects_list({Key? key}) : super(key: key);
-  static String routeName = 'Subjects';
+class Announcements extends StatefulWidget {
+  const Announcements({Key? key}) : super(key: key);
+  static String routeName = 'Announcements';
 
   @override
-  _Subjects_listState createState() => _Subjects_listState();
+  _AnnouncementsState createState() => _AnnouncementsState();
 }
+
+class _AnnouncementsState extends State<Announcements> with TickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation<Offset> _animation;
