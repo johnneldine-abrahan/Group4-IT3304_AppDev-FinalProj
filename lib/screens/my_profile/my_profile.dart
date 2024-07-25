@@ -80,12 +80,12 @@ class MyProfileScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             ProfileDetailRow(
-                              title: 'Birthday',
-                              value: 'November 8, 2003',
+                              title: 'Adviser',
+                              value: 'Dylan Katelyn M. Balangao',
                             ),
                             ProfileDetailRow(
-                              title: 'null',
-                              value: 'null',
+                              title: 'Birthday',
+                              value: 'November 8, 2003',
                             ),
                           ],
                         ),
