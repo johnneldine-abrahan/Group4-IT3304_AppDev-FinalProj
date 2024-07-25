@@ -9,6 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  google_fonts: ^4.0.4
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^0.22.0
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +21,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/img/splash.png
+    - assets/img/log-in.png
+    - assets/icon/subjects.svg
+    - assets/icon/announcements.svg
+    - assets/icon/payments.svg
+    - assets/icon/all-grades.svg
+    - assets/icon/grades.svg
+    - assets/icon/liabilities.svg
+    - assets/img/profile.jpg
