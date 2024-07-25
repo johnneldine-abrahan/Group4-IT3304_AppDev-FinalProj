@@ -72,3 +72,16 @@ class AnnouncementCard extends StatelessWidget {
     required this.title,
     required this.description,
   }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.symmetric(vertical: 8.0),
+      child: ListTile(
+        title: Text(title, style: Theme.of(context).textTheme.titleMedium),
+        subtitle: Text(description, style: Theme.of(context).textTheme.labelSmall),
+        leading: Icon(Icons.info, color: Colors.blue),
+      ),
+    );
+  }
+}
