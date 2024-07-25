@@ -4,7 +4,7 @@
 The San Juan Institute of Technology (SJIT) Student Portal aims to revolutionize the way students interact with academic information, administrative services, and campus life. This digital platform will provide a centralized hub for students to access information, manage their academic journey, and engage with the institution effectively.
 
 # 🎯 Features
-**1.    Students can view their Enrolled Subjects**
+1.    Students can view their Enrolled Subjects
            - Students can access a comprehensive list of all the subjects they are currently enrolled in. This section provides details such as subject names, schedules, and instructors. It helps students keep track of their classes and plan their study time accordingly.
 2.	Students can view Announcements
        - This feature allows students to stay updated with the latest information and notifications from the school. Announcements might include important dates, events, changes in schedules, or general notices that are relevant to the students' academic life.
