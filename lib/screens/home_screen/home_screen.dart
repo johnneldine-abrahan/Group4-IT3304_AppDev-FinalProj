@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                           studentName: 'Mikhaela Janna',
                         ),
                         kHalfSizedBox,
-                        StudentClass(studentClass: 'Grade 10'),
+                        StudentClass(studentClass: 'Grade 10 - BINI'),
                         kHalfSizedBox,
                         StudentYear(studentYear: 'AY: 2023-2024'),
                       ],
